@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &831045514410852947
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 821610308, guid: b5e869b954657964d90dd4a0e95dbee5, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489347526, guid: b5e869b954657964d90dd4a0e95dbee5, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956793216, guid: b5e869b954657964d90dd4a0e95dbee5, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 61757037515680276, guid: b5e869b954657964d90dd4a0e95dbee5, type: 3}
+      propertyPath: m_Name
+      value: Offset Controlled Cube Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 61757037515680286, guid: b5e869b954657964d90dd4a0e95dbee5, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61757037515680286, guid: b5e869b954657964d90dd4a0e95dbee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61757037515680286, guid: b5e869b954657964d90dd4a0e95dbee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61757037515680286, guid: b5e869b954657964d90dd4a0e95dbee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1489347526, guid: b5e869b954657964d90dd4a0e95dbee5, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: b5e869b954657964d90dd4a0e95dbee5, type: 3}
+--- !u!1 &816014429285296199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 61757037515680276, guid: b5e869b954657964d90dd4a0e95dbee5, type: 3}
+  m_PrefabInstance: {fileID: 831045514410852947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &821610308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816014429285296199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f692ce411fb2add4a8a735e75d18118a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  handleOffset: {x: 5, y: 0, z: 0}
+  PositionGains: {x: 800, y: 200, z: 400}
+  AttitudeGains: {x: 8, y: 2, z: 4}
