@@ -1,0 +1,29 @@
+{
+  "name": "syulleh.zcontrol",
+  "version": "0.0.1",
+  "displayName": "Syulleh zControl",
+  "description": "Command and Control",
+  "unity": "2020.3",
+  "unityRelease": "21f1",
+  "keywords": [
+    "command",
+    "control",
+    "pid"
+  ],
+  "samples": [
+    {
+      "displayName": "PID",
+      "description": "Two rigidbodies controlled with a PID",
+      "path": "Samples~/PID"
+    },
+    {
+      "displayName": "Trajectory",
+      "description": "A rigidbody following a trajectory, robust to perturbations",
+      "path": "Samples~/Trajectory"
+    }
+  ],
+  "author": {
+    "name": "Syulleh",
+    "email": "luys.hell@gmail.com"
+  }
+}
