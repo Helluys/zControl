@@ -7,6 +7,10 @@
 			this.y = y;
 		}
 
+		public override string ToString () {
+			return "(" + x + "; " + y + ")";
+		}
+
 		#region conversion
 		public static implicit operator UnityEngine.Vector2 (Vector2 v) => new UnityEngine.Vector2(v.x, v.y);
 		public static implicit operator Vector2 (UnityEngine.Vector2 v) => new Vector2(v.x, v.y);

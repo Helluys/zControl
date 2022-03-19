@@ -7,6 +7,10 @@
 			this.y = y;
 			this.z = z;
 		}
+		
+		public override string ToString () {
+			return "(" + x + "; " + y + "; " + z + ")";
+		}
 
 		#region conversion
 		public static implicit operator UnityEngine.Vector3 (Vector3 v) => new UnityEngine.Vector3(v.x, v.y, v.z);
@@ -34,7 +38,7 @@
 		public readonly Vector3 Multiply (Vector3 other) => this * other;
 
 		public static readonly Vector3 one = new Vector3(1f, 1f, 1f);
-		public static Vector3 operator* (Vector3 a, Vector3 b) => new Vector3(a.x * b.x, a.y * b.y, a.z * b.z);
+		public static Vector3 operator * (Vector3 a, Vector3 b) => new Vector3(a.x * b.x, a.y * b.y, a.z * b.z);
 		#endregion
 
 		#region inner product space on reals

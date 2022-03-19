@@ -36,17 +36,18 @@ namespace zControl.Unity {
 		}
 
 		private void InstantiateTestSubjects (Vector3 targetPosition, Quaternion targetAttitude) {
-			controlledInstance = new GameObject();
-			controllerRigidbody = controlledInstance.AddComponent<UnityEngine.Rigidbody>();
-			controllerRigidbody.useGravity = false;
-			LinearRigidbodyController controller = controlledInstance.AddComponent<LinearRigidbodyController>();
-			controller.PositionGains = new Vector3(100, 10, 10);
-			controller.AttitudeGains = controller.PositionGains / 10f;
-
 			targetInstance = new GameObject();
 			targetInstance.transform.SetPositionAndRotation(targetPosition, targetAttitude);
 			TargetKinematicState target = targetInstance.AddComponent<TargetKinematicState>();
-			
+
+			controlledInstance = new GameObject();
+			controllerRigidbody = controlledInstance.AddComponent<UnityEngine.Rigidbody>();
+			controllerRigidbody.useGravity = true;
+			LinearRigidbodyController controller = controlledInstance.AddComponent<LinearRigidbodyController>();
+			controller.PositionGains = new Vector3(800, 200, 200);
+			controller.AttitudeGains = controller.PositionGains / 100f;
+			controller.maxForce = 500f;
+			controller.maxTorque = 500f;
 			controller.target = target;
 		}
 	}
